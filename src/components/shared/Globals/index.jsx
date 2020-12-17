@@ -11,7 +11,7 @@ const GlobalStoreProvider = ({children}) => {
     if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
       REACT_APP_ENDPOINT = "http://localhost:4000";
     } else {
-      REACT_APP_ENDPOINT = "https://final-comp-2068.herokuapp.com/";
+      REACT_APP_ENDPOINT = "https://final-comp-2068.herokuapp.com";
     }
     setGlobalStore({ REACT_APP_ENDPOINT, REACT_APP_SOCKET });
   }, []);
