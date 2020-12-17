@@ -17,7 +17,7 @@ const Destroy = () => {
     .catch(error => {
       setNotification(`Couldn't destroy the selected book due to an error: ${error.message}`);
     });
-  }, []);
+  }, [globalStore, id, setNotification]);
 
   return <Redirect to="/"/>;
 }
